@@ -3,5 +3,80 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
+}
+
+body{ 
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(#f3f1f1, #f35252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+ width: fit-content;
+ height: fit-content;
+
+  padding:1rem;
+  background-color: #aff4ff;
+  color: rgb(8, 38, 44);
+}
+
+input{
+  background-color: #aff4ff;
+}
+
+.grid{
+  width: 100vmin;
+  max-width: 600px;
+  height: 100vmin;
+  max-height: 600px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4,1fr);
+  border: .5rem solid black;
+}
+
+.grid-items{
+  border: 1px solid #757575;
+  position: relative;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt{
+  position:absolute;
+  top: 0;
+  left: 0;
+  margin: 0.25rem;
+
+}
+
+.answer{
+  font-size: 2rem;
+  border: none;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+#box3, #box7, #box10, #box11, #box12, #box15{
+  border-left: .5rem solid black;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11{
+  border-bottom: .5rem solid black;
+}
+
+@media  only screen and (min-width: 475px) {
+  html{
+    font-size: 20px;
+  }
 }
